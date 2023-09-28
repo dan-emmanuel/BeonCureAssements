@@ -1,5 +1,7 @@
 import express from 'express';
 import apiRoutes from 'routes/apiRoutes';
+import { LoggerService } from 'utils/loggerService';
+
 import services from 'utils/services';
 
 
@@ -8,7 +10,13 @@ const PORT = 3000;
 const HOST = 'localhost';
 const logger = services.getLogger('APP');
 
+
+
+
+app.use(LoggerService.traceMiddleware);
+
 app.get('/', (req, res) => {
+  res.status(200);
   res.send('Hello world!');
 })
 
