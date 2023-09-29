@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
-import services from 'utils/services';
-import { ReaderFactory, ReadersTypes } from 'models/tables/ReaderFactory';
+import services from '../utils/services';
+import { ReaderFactory, ReadersTypes } from '../models/tables/ReaderFactory';
 import path from 'path';
-import { ListTablesStrategy } from 'models/tables/files/ListTableStrategy';
-import { TableInfoStrategy } from 'models/tables/files/TableInfoStrategy'; // Assuming you have this imported
+import { ListTablesStrategy } from '../models/tables/files/ListTableStrategy';
+import { TableInfoStrategy } from '../models/tables/files/TableInfoStrategy'; // Assuming you have this imported
 
 export class FileController {
     private logger = services.getLogger('FileController');

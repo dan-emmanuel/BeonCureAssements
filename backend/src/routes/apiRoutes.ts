@@ -1,9 +1,9 @@
 import express, { Request, Response, NextFunction, Router } from 'express';
-import { FileController } from 'controllers/FileControllers';
+import { FileController } from '../controllers/FileControllers';
 import fs from 'fs';
 import path from 'path';
 import { CustomRequestHandler } from './type';
-import services from 'utils/services';
+import services from '../utils/services';
 
 class FileRouter {
   private router: Router;

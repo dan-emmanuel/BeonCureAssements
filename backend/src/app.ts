@@ -1,9 +1,9 @@
 import cors from 'cors';
 import express from 'express';
-import apiRoutes from 'routes/apiRoutes';
-import { LoggerService } from 'utils/loggerService';
+import apiRoutes from './routes/apiRoutes';
+import { LoggerService } from './utils/loggerService';
 
-import services from 'utils/services';
+import services from './utils/services';
 
 
 const app = express();
