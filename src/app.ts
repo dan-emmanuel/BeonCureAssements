@@ -1,3 +1,4 @@
+import cors from 'cors';
 import express from 'express';
 import apiRoutes from 'routes/apiRoutes';
 import { LoggerService } from 'utils/loggerService';
@@ -12,6 +13,7 @@ const logger = services.getLogger('APP');
 
 
 
+app.use(cors());
 
 app.use(LoggerService.traceMiddleware);
 
