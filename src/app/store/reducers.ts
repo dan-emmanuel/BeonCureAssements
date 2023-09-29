@@ -4,11 +4,12 @@ import { AppState } from './state';
 
 export const initialState: AppState = {
   files: [],
-  tables: []
-};
+  tables: [],
+  };
 
 export const appReducer = createReducer(
   initialState,
   on(actions.filesLoaded, (state, { files }) => ({ ...state, files })),
-  on(actions.tablesLoaded, (state, { tables }) => ({ ...state, tables }))
+  on(actions.tablesLoaded, (state, { tables }) => ({ ...state, tables })),
+  on(actions.tableLoaded, (state, { table }) => ({ ...state, table }))
 );

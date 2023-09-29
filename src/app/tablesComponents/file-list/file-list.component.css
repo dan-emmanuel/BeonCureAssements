@@ -1,0 +1,10 @@
+li{
+  background-color: rgb(13, 110, 253);
+  color: white;
+
+}
+
+li:hover{
+  background-color: #0b5ed7;
+  color: white;
+}

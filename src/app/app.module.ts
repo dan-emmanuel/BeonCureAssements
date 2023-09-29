@@ -11,23 +11,22 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { AppEffects } from './store/effects';
 import { HttpClientModule } from '@angular/common/http';
+import { AppHeader } from './app-header/app-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AppHeader,
     TableDetailComponent,
     TableListComponent,
     FileListComponent,
-    
-    
-      ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({ appState: appReducer }),
     EffectsModule.forRoot([AppEffects]),
     HttpClientModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+<div class="backToLinks" *ngIf="!shouldHideRedirectors()">
+  <button (click)="backToFileListe()" >
+    Files List
+    
+  </button>
+  <button *ngIf="shouldShowTableListButton()"
+  (click)="backToTablelist()">
+    Table List
+  </button>
+</div>

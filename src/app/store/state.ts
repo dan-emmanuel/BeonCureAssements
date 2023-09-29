@@ -5,7 +5,12 @@ export interface Table {
   notes: string;
 }
 
+export type TableTitleAndIndex = {
+  title: string;
+  id: number;
+}
 export interface AppState {
   files: string[];
-  tables: Table[];
+  tables: TableTitleAndIndex[];
+  table?: Table;
 }

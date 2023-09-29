@@ -1,6 +1,12 @@
-<div *ngIf="table$ | async as table">
-  <h2>{{ table.title }}</h2>
-  <p><strong>Rows:</strong> {{ table.rows }}</p>
-  <p><strong>Columns:</strong> {{ table.columns }}</p>
-  <p><strong>Notes:</strong> {{ table.notes }}</p>
+
+
+
+<div class="card" *ngIf="table$ | async as table">
+  <div class="card-header">{{ table.title }}</div>
+  <div class="card-body">
+    <p><span class="catname">Rows:</span> {{ table.rows }}</p>
+    <p><span class="catname">Columns:</span> {{ table.columns }}</p>
+    <p><span class="catname">Notes:</span> {{ table.notes }}</p>
+  </div>
+
 </div>

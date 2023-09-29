@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-file-list',
   templateUrl: './file-list.component.html',
-  styleUrls: ['./file-list.component.css']
+  styleUrls: ['./file-list.component.css','../../sharedCSS/row.css']
 })
 export class FileListComponent implements OnInit {
   files$: Observable<string[]>;

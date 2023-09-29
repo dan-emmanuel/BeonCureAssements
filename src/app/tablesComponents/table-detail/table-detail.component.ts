@@ -4,6 +4,7 @@ import { Store } from '@ngrx/store';
 import * as fromRoot from '../../store/selectors'
 import { Observable } from 'rxjs';
 import { Table } from '../table.type';
+import { loadTable } from 'src/app/store/actions';
 
 
 
@@ -18,16 +19,19 @@ export class TableDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private store: Store<{ tables: Table[] }>  
+    private store: Store<{ table: Table | undefined }>  
   ) { 
 
   }
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
+    this.route.params.subscribe(params => {      
       const fileName = params['fileName'];
       const tableIndex = +params['tableIndex']; 
-      this.table$ = this.store.select(state => state.tables[tableIndex]);
+      this.store.dispatch(loadTable({ params: { fileName, tableIndex } }));
+      this.table$ = (this.store.select(fromRoot.selectTable) as Observable<Table>);
     });
   }
 }
+
+

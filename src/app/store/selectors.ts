@@ -1,10 +1,8 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { AppState } from './state';
 
-// Feature Selector
-const selectAppState = createFeatureSelector<AppState>('app');
+const selectAppState = createFeatureSelector<AppState>('appState');
 
-// Selectors
 export const selectFiles = createSelector(
   selectAppState,
   (state: AppState) => state.files
@@ -15,4 +13,7 @@ export const selectTables = createSelector(
   (state: AppState) => state.tables
 );
 
-
+export const selectTable = createSelector(
+  selectAppState,
+  (state: AppState) => state.table
+);
