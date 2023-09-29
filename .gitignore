@@ -1,0 +1,3 @@
+# Delegate to sub-directory .gitignore files
+!/front-end/*
+!/backend/*
