@@ -24,11 +24,13 @@ This project demonstrates a full-stack application where the backend serves stat
 1. Open two separate shell sessions - one for the backend and one for the frontend.
 
 2. For the backend:
-cd backend
-npm run dev
+  ```bash
+  cd backend
+  npm run dev
 3. For the frontend:
-cd frontend
-ng serve
+  ```bash
+  cd frontend
+  ng serve
 
 4. Visit http://localhost:4200 to access the application.
 
