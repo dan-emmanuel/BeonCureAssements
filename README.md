@@ -29,7 +29,7 @@ This project demonstrates a full-stack application where the backend serves stat
   npm run dev
   ```
 3. For the frontend:
-  ```bash
+  ```
   cd frontend
   ng serve
   ```
@@ -38,13 +38,12 @@ This project demonstrates a full-stack application where the backend serves stat
 ### Running in Production Mode
 
 1. Build both backend and frontend for production:
-```bash
+```
 cd backend
 npm run build
 cd ../frontend
 npm run build
 ```
-
 2. After building, start the application:
 ```bash
 npm start
