@@ -27,24 +27,28 @@ This project demonstrates a full-stack application where the backend serves stat
   ```bash
   cd backend
   npm run dev
+  ```
 3. For the frontend:
   ```bash
   cd frontend
   ng serve
-
+  ```
 4. Visit http://localhost:4200 to access the application.
 
 ### Running in Production Mode
 
 1. Build both backend and frontend for production:
-
+```bash
 cd backend
 npm run build
 cd ../frontend
 npm run build
+```
 
 2. After building, start the application:
+```bash
 npm start
+```
 
 
 
