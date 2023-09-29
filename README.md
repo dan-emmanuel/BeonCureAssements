@@ -16,7 +16,7 @@ This project demonstrates a full-stack application where the backend serves stat
 
 ### Installation
 1. Navigate to both `./backend` and `./frontend` directories and run the following to install dependencies:
-  ```bash
+  ```
    npm install
   ```
 
