@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let table of tables$ | async; let i = index" 
+      (click)="onTableSelected(i)">
+    {{ table.title }}
+  </li>
+</ul>
